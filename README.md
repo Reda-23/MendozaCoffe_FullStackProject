@@ -1,0 +1,1 @@
+This is a basic Coffee Shop Management System where I implemented security and testing. The project manages customers, waiters, and orders, automatically calculates and generates bills, and ensures data protection. The application utilizes a Spring Boot backend and a React frontend to provide an efficient and user-friendly experience.
