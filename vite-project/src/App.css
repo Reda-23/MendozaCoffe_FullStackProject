@@ -1,0 +1,32 @@
+.custom-container {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Optional padding */
+  background-color: #f8f9fa; /* Optional background color */
+}
+
+.item {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 10px; /* Add margin between items */
+}
+
+.invoice-title h2,
+.invoice-title h3 {
+  display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+  border-top: none;
+}
+
+.table > thead > tr > .no-line {
+  border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+  border-top: 2px solid;
+}
