@@ -235,7 +235,7 @@ export const Bill = () => {
             <Link
               className="text-decoration-none text-white text-align-end"
               to="/orders">
-              Home Page
+              Go To Order History
             </Link>
           </button>
         </>

@@ -1,6 +1,5 @@
 package org.mendozaproject.services.impl;
 
-import org.apache.catalina.User;
 import org.mendozaproject.models.Users;
 import org.mendozaproject.repos.UsersRepository;
 import org.mendozaproject.security.JWTService;

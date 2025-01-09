@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org</groupId>
-    <artifactId>Mendozaproject</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Mendozaproject</name>
-    <description>Mendozaproject</description>
+    <artifactId>mendoza-app-backend</artifactId>
+    <version>1.0.0</version>
+    <name>mendoza-app-backend</name>
+    <description>mendoza-app-backend</description>
     <url/>
     <licenses>
         <license/>
@@ -69,8 +69,8 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>

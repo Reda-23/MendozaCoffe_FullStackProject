@@ -18,7 +18,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Entity
-@Data
 public class Users implements UserDetails {
 
     @Id
@@ -28,6 +27,30 @@ public class Users implements UserDetails {
     private String password;
     private String role;
 
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     public Users(Integer id, String username, String password, String role) {
         this.id = id;

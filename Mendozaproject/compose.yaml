@@ -1,0 +1,35 @@
+
+services:
+  postgresDB:
+    image: postgres
+    ports:
+      - '5432:5432'
+    container_name: postgresDB
+    networks:
+      - mendoza-net
+    environment:
+      - POSTGRES_DB=mendoza
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=reda@123
+    volumes:
+      - /c/postgres_container_data:/var/lib/postgresql/data
+    restart: always
+
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mendoza_app_con
+    ports:
+      - '8085:8085'
+    networks:
+      - mendoza-net
+    environment:
+      - DB_URL=jdbc:postgresql://postgresDB:5432/mendoza
+    depends_on:
+      - postgresDB
+networks:
+  mendoza-net:
+    driver: bridge
+
