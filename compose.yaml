@@ -1,5 +1,6 @@
 
 services:
+
   postgresDB:
     image: postgres
     ports:
@@ -17,9 +18,7 @@ services:
 
 
   backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: ./backend
     container_name: mendoza_app_con
     ports:
       - '8085:8085'
@@ -29,6 +28,20 @@ services:
       - DB_URL=jdbc:postgresql://postgresDB:5432/mendoza
     depends_on:
       - postgresDB
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: react-app-con
+    networks:
+      - mendoza-net
+    ports:
+      - '8089:80'
+    depends_on:
+      - backend
+
+
 networks:
   mendoza-net:
     driver: bridge

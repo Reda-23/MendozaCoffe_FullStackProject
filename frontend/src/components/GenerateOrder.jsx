@@ -30,7 +30,7 @@ export const GenerateOrder = () => {
   };
   const getAllItems = async () => {
     try {
-      const response = await fetch("http://localhost:8081/v1/item" + "/items", {
+      const response = await fetch("http://localhost:8085/v1/item" + "/items", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export const GenerateOrder = () => {
   const generateOrder = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8081/v1/order" + `/${waiter}`,
+        "http://localhost:8085/v1/order" + `/${waiter}`,
         {
           method: "POST",
           headers: {
@@ -71,7 +71,7 @@ export const GenerateOrder = () => {
     const oId = order.orderId;
     try {
       const response = await fetch(
-        `http://localhost:8081/v1/order/${oId}/${id}`,
+        `http://localhost:8085/v1/order/${oId}/${id}`,
         {
           method: "PUT",
           headers: {

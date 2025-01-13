@@ -11,7 +11,7 @@ import {
 import { AuthProvider } from "./components/security/AuthContext.jsx";
 import { EditCustomer } from "./components/EditCustomer.jsx";
 import { GenerateOrder } from "./components/GenerateOrder.jsx";
-import Login from "./components/security/login.jsx";
+import Login from "./components/security/Login.jsx";
 import { Bill } from "./components/Bill.jsx";
 import ProtectedRoute from "./components/security/ProtectedRoute.jsx";
 import { HomePage } from "./components/security/HomePage.jsx";
