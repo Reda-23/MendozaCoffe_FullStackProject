@@ -14,7 +14,7 @@ export const Bill = () => {
   const generateBill = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8081/v1/bill/${orderId}/${payement}/${tax}`,
+        `http://localhost:8085/v1/bill/${orderId}/${payement}/${tax}`,
         {
           method: "POST",
           headers: {

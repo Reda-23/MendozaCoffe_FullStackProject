@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const GenerateOrder = () => {
   const navigate = useNavigate();
   const [waiters, setWaiters] = useState([]);
-  const baseUrl = "http://localhost:8081/v1/waiter";
+  const baseUrl = "http://localhost:8085/v1/waiter";
   const token = localStorage.getItem("Token");
   const [waiter, setWaiter] = useState();
   const [order, setOrder] = useState({});

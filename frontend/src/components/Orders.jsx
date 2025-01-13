@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 export const Orders = () => {
   const [orders, setOrders] = useState([]);
   const token = localStorage.getItem("Token");
-  const baseUrl = "http://localhost:8081/v1/order";
+  const baseUrl = "http://localhost:8085/v1/order";
 
   const orderHistory = async () => {
     try {
